@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,7 +20,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          <a class="nav-link active" aria-current="page" href="index.jsp">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="CreateAndFind1">Lista de Clientes</a>
@@ -54,7 +55,7 @@
 							<tr>
 								<td>${cliente.id}</td>
 								<td>${cliente.nomeCliente}</td>
-								<td>${cliente.modalidadeCliente}</td>
+								<td>${cliente.enderecoCliente}</td>
 								<td>${cliente.modalidadeCliente}</td>
 								<td>${cliente.situacaoCliente}</td>
 								<td>
@@ -65,7 +66,7 @@
 						</c:forEach>
 				</tbody>
 			</table>
-			<h5><a href="index.html">Voltar para o Cadastro de Clientes</a></h5>
+			<h5><a href="index.jsp">Voltar para o Cadastro de Clientes</a></h5>
 		</div>
 	</div>
 </div>

@@ -1,0 +1,5 @@
+conexao\MySqlConnection.class
+dao\CRUD.class
+dao\ClienteDao.class
+controller\ClienteCreateAndFind.class
+model\Cliente.class
