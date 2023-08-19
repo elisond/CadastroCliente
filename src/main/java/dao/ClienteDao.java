@@ -51,7 +51,7 @@ public class ClienteDao implements CRUD {
 	}
 	
 	public static void update(Cliente cliente) {
-		sql = "UPDATE tabelaclientes SET nome=?, cpf=?, nascimento=?, situacao=? WHERE id=?";
+		sql = "UPDATE tabelaclientes SET nomeCliente=?, enderecoCliente=?, modalidadeCliente=?, situacaoCliente=? WHERE id=?";
 		 
 		 try {
 			 PreparedStatement preparedStatement = connection.prepareStatement(sql);
@@ -80,10 +80,10 @@ public class ClienteDao implements CRUD {
 			
 			while (resultSet.next()) {
 				cliente.setId(resultSet.getInt("id"));
-				cliente.setNomeCliente(resultSet.getString("nome"));
-				cliente.setEnderecoCliente(resultSet.getString("cpf"));
-				cliente.setModalidadeCliente(resultSet.getString("nascimento"));
-				cliente.setSituacaoCliente(resultSet.getString("situacao"));
+				cliente.setNomeCliente(resultSet.getString("nomeCliente"));
+				cliente.setEnderecoCliente(resultSet.getString("enderecoCliente"));
+				cliente.setModalidadeCliente(resultSet.getString("modalidadeCliente"));
+				cliente.setSituacaoCliente(resultSet.getString("situacaoCliente"));
 			}
 			
 			System.out.println("--correct find by pk clientes");

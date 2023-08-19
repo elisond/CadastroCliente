@@ -19,4 +19,24 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>ClienteDelete</display-name>
+    <servlet-name>ClienteDelete</servlet-name>
+    <servlet-class>controller.ClienteDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ClienteDelete</servlet-name>
+    <url-pattern>/ClienteDestroy</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ClienteFindAndUpdate</display-name>
+    <servlet-name>ClienteFindAndUpdate</servlet-name>
+    <servlet-class>controller.ClienteFindAndUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ClienteFindAndUpdate</servlet-name>
+    <url-pattern>/ClienteUpdate</url-pattern>
+  </servlet-mapping>
 </web-app>
