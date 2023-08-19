@@ -27,7 +27,7 @@
         </li>
       </ul>
       <form action="CreateAndFind1" method="GET" class="d-flex">
-        <input name="pesquisa" class="form-control me-2" type="search" placeholder="Digite o Nome ou CPF" aria-label="Search">
+        <input name="pesquisa" class="form-control me-2" type="search" placeholder="Digite o Nome" aria-label="Search">
         <button class="btn btn-outline-success" type="submit">Buscar</button>
       </form>
     </div>
